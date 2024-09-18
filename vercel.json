@@ -5,14 +5,6 @@
       { "src": "/enroll", "dest": "/enroll.html" },
       { "src": "/contact", "dest": "/contact.html" },
       { "src": "/old-page", "status": 301, "headers": { "Location": "/new-page" } }
-    ],
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers": [
-          { "key": "Cache-Control", "value": "max-age=3600" }
-        ]
-      }
     ]
   }
   
