@@ -3,6 +3,7 @@
     "routes": [
       { "src": "/", "dest": "/index.html" },
       { "src": "/enroll", "dest": "/enroll.html" },
+      { "src": "/attendance", "dest": "/attendance.html" },
       { "src": "/contact", "dest": "/contact.html" },
       { "src": "/old-page", "status": 301, "headers": { "Location": "/new-page" } }
     ]
