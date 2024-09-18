@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/attendance.css">
+    <title>Standup Attendance Page - Time Sheet App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Stand-up Attendance</h1>
+            <p class="error">Kindly input all the necessary details!</p>
+            <div id="toast" class="toast">
+                <span id="toastLoader" class="loader"></span>
+                <span id="pleaseWait" class="please-wait">Please wait...</span>
+                <span id="toastMessage" class="message">Sorry, email address not found.</span>
+            </div>
+
+            <form action="/">
+               <div class="input-group">
+                <div class="input-field">
+                       <input type="text" name="clock-date" id="clock-date" placeholder="YY-MM-DD">
+                </div>
+
+                <div class="input-field">
+                       <input type="text" name="clock-time" id="clock-time" placeholder="HH:MM:SS">
+                </div>
+
+                <div class="input-field">
+                    <input type="password" name="password" id="passcode" placeholder="Enter daily passcode">
+                    <span class="error-message">Passcode must be 6 characters long</span>
+                </div>
+                
+               </div>
+               <button type="button" id="markBtn">Submit</button>
+
+               <div class="btn-field">
+                <button type="button" id="logOutBtn">Log Out</button>
+               </div>
+            </form>
+        </div>
+    </div>
+    <script src="/JS/attendance.js"></script>
+</body>
+</html>

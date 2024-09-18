@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/timelog.css">
+    <title>Time Log Page - Time Sheet App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Time Log Entry</h1>
+            <p class="error">Kindly provide all the necessary details!</p>
+            <form action="/">
+                <div class="input-group">
+                    <div id="toast" class="toast">
+                        <span id="toastLoader" class="loader"></span>
+                        <span id="pleaseWait" class="please-wait">Please wait...</span>
+                        <span id="toastMessage" class="message">Sorry, email address not found.</span>
+                    </div>
+
+                     <div class="select-field">
+                        <select name="clock" id="time">
+                            <option value="default">Select Clock Type</option>
+                            <option value="Clock In">Clock In</option>
+                            <option value="Clock Out">Clock Out</option>
+                        </select>
+                     </div>
+                     
+                     <div class="select-field">
+                        <select name="projects" id="project">
+                            <option value="default">Select Project</option>
+                            <option value="Etihuku Website">Etihuku Website</option>
+                            <option value="Etihuku Blog">Etihuku Blog</option>
+                            <option value="Eti-Intelligence">Eti-Intelligence</option>
+                            <option value="Curnance Website">Curnance Website</option>
+                            <option value="Curnance Blog">Curnance Blog</option>
+                            <option value="Curnance P2P">Curnance P2P</option>
+                            <option value="Curnance Admin">Curnance Admin</option>
+                            <option value="Thola">Thola</option>
+                            <option value="Cleva">Cleva</option>
+                            <option value="EtiVerse">EtiVerse</option>
+                            <option value="COTGo">COTGo</option>
+                            <option value="Gatsheni Advisory">Gatsheni Advisory</option>
+                            <option value="Others">Others</option>
+                        </select>
+                     </div>
+
+                     <div class="select-field">
+                        <select name="manager-list" id="manager">
+                            <option value="default">Select Manager</option>
+                            <option value="Saheed Faremi">Saheed Faremi</option>
+                            <option value="Jeremiah Olamijuwon">Jeremiah Olamijuwon</option>
+                            <option value="Moses Daniel">Moses Daniel</option>
+                            <option value="Elizabeth Oyekanmi">Elizabeth Oyekanmi</option>
+                        </select>
+                     </div>
+
+                    <div class="input-field" id="nameField">
+                        <input type="text" name="task-num" id="task-num" placeholder="Story Task Number">
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="description" id="description" placeholder="Add description">
+                    </div>
+
+                    <div class="btn-field">
+                        <button type="button" id="timelogBtn">Submit</button>
+                    </div>
+
+                    <div class="btn-field">
+                     <button type="button" id="logOutBtn">Log Out</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/JS/timelog.js" ></script>
+</body>
+</html>

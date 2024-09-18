@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/codegen.css">
+    <title>Code Generation Page - Time Sheet App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Stand-up Code Generation</h1>
+            <form action="/">
+                <div class="input-group">
+                    <p class="error">Kindly provide all the necessary details!</p>
+                    <div id="toast" class="toast">
+                        <span id="toastLoader" class="loader"></span>
+                        <span id="pleaseWait" class="please-wait">Please wait...</span>
+                        <span id="toastMessage" class="message">Sorry, email address not found.</span>
+                    </div>
+                    <div class="input-field">
+                        <select name="manager-list" id="manager" class="input-field">
+                            <option value="default">Manager Name</option>
+                            <option value="Saheed Faremi">Saheed Faremi</option>
+                            <option value="Elizabeth Oyekanmi">Elizabeth Oyekanmi</option>
+                            <option value="Jeremiah Olamijuwon">Jeremiah Olamijuwon</option>
+                            <option value="Moses Daniel">Moses Daniel</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+                <button type="button" id="generateBtn">Generate Code</button>
+                <div class="btn-field">
+                    <button type="button" id="logOutBtn">Log Out</button>
+                   </div>
+            </form>
+        </div>
+    </div>
+    <script src="/JS/codegen.js"></script>
+</body>
+</html>

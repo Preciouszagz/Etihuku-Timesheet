@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <title>Log In Page - Time Sheet App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box"> 
+            <h1 id="title">Log In Page</h1>
+            <form action="/">
+                <div class="input-group">
+                    <p class="error">Kindly provide all the necessary details!</p>
+                    <div id="toast" class="toast">
+                        <span id="toastLoader" class="loader"></span>
+                        <span id="pleaseWait" class="please-wait">Please wait...</span>
+                        <span id="toastMessage" class="message">Invalid data</span>
+                    </div>
+
+                    <div class="input-field">
+                        <select name="manager-list" id="manager">
+                            <option value="default">Select Name</option>
+                            <option value="Adriaan Mahlangu" class="employee">Adriaan Mahlangu</option>
+                            <option value="Bolaji Bamigboye" class="employee">Bolaji Bamigboye</option>
+                            <option value="Brian Msane" class="employee">Brian Msane</option>
+                            <option value="Chester Mabulela" class="employee">Chester Mabulela</option>
+                            <option value="Christopher Tshikosi" class="employee">Christopher Tshikosi</option>
+                            <option value="Emmanuel Faremi" class="employee">Emmanuel Faremi</option>
+                            <option value="Elizabeth Oyekanmi" class="manager">Elizabeth Oyekanmi</option>
+                            <option value="Ireoluwa Agboola" class="employee">Ireoluwa Agboola</option>
+                            <option value="Jeremiah Olamijuwon" class="admin">Jeremiah Olamijuwon</option>
+                            <option value="Joshua Ekpobimi" class="employee">Joshua Ekpobimi</option>
+                            <option value="Moses Daniel" class="manager">Moses Daniel</option>
+                            <option value="Okwuchukwu Chukwu" class="employee">Okwuchukwu Chukwu</option>
+                            <option value="Paul Iroribulor" class="employee">Paul Iroribulor</option>
+                            <option value="Potsiso Maja" class="employee">Potsiso Maja</option>
+                            <option value="Precious Ezeagu" class="employee">Precious Ezeagu</option>
+                            <option value="Saheed Faremi" class="admin">Saheed Faremi</option>
+                            <option value="Siyabonga Masilela" class="employee">Siyabonga Masilela</option>
+                            <option value="Tsakane Maluleke" class="employee">Tsakane Maluleke</option>
+                            <option value="Tumelo Makomene" class="employee">Tumelo Makomene</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="password" id="password" placeholder="Enter your passcode">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="btn-field">
+                        <button type="button" id="loginBtn" class="disabled">Log In</button>
+                    </div>
+                </div>   
+            </form>
+        </div>
+    </div>
+    <script src="/JS/script.js"></script>
+
+</body>
+</html>

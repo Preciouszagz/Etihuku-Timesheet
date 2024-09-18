@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(/images/work\ space.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    width: 75%;
+    height: 70%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 50px 60px;
+    text-align: center;
+}
+
+.form-box h1{
+    font-size: 1.5rem;
+    font-weight: 750;
+    margin: 0 auto 30px;
+    color: #3c00a0;
+    position: relative;
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+.form-box h1::after{
+    content: "";
+    background-color: #3c00a0;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+select{
+    width: 100%;
+    margin: 10px;
+}
+
+option{
+    cursor: pointer;
+}
+
+select{
+    padding: 5px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.input-group{
+    background: #fff;
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #eaeaea34;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-field .error-message {
+    display: none;
+    color: red;
+    font-weight: 550;
+    margin: -4px 0 0 -2px;
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+input{
+    width: 100%;
+    background: #eaeaea34;
+    border: 0;
+    outline: 0;
+    padding: 15px;
+}
+
+button{
+    width: 100%;
+    background: #3c00a0;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #270164;
+}
+
+.error{
+    color: red;
+    font-size: 0.75rem;
+    display: none;
+    font-weight: 550;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.toast {
+    visibility: hidden; 
+    min-width: 295px; 
+    max-width: 800px;
+    width: 100%;
+    background: #270164c4;
+    color: #fff; 
+    text-align: center; 
+    padding: 30px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 0.8rem; 
+}
+
+.toast.show {
+    visibility: visible; 
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+    margin-bottom: 10px; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.please-wait {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+.message {
+    display: none;
+}
+
+#backbtn{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* X-small Devices */
+@media (max-width: 576px) {
+    .container {
+        overflow-x: hidden;
+    }
+
+    .form-box {
+        width: 90%;
+        height: 70%;
+        max-height: 550px;
+        max-width: 800px;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-box h1{
+        font-size: 1.1rem;
+    }
+}
+
+/* Small Devices */
+@media (min-width: 576px) {
+    .container {
+        overflow-x: hidden;
+    }
+
+    .form-box {
+        width: 90%;
+        height: 60%;
+        max-width: 800px;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* Medium Devices */
+@media (min-width: 768px) {
+    .container {
+        overflow-x: hidden;
+    }
+
+    .form-box {
+        width: 90%;
+        height: 60%;
+        max-width: 800px;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* Large Devices */
+@media (min-width: 992px) {
+    .container {
+        overflow-x: hidden;
+    }
+
+    .form-box {
+        width: 90%;
+        height: 90%;
+        max-width: 800px;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .toast{
+        font-size: 1.2rem;
+        max-width: 1200px;
+    }
+}
+
+/* X-large Devices */
+@media (min-width: 1200px) {
+    .container {
+        overflow-x: hidden;
+    }
+
+    .form-box {
+        width: 90%;
+        height: 80%;
+        min-width: 1000px;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .toast{
+        font-size: 1.2rem;
+        max-width: 1200px;
+    }
+}
+
+/* XX-large Devices */
+@media (min-width: 1400px) {
+    .container {
+        overflow-x: hidden;
+    }
+
+    .form-box {
+        width: 90%;
+        height: 80%;
+        min-width: 1200px;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .toast{
+        font-size: 1.5rem;
+        max-width: 1200px;
+    }
+}
+
+/* X-small Devices Landscape (max-width: 576px) */
+@media (max-width: 576px) and (orientation: landscape) {
+    .container {
+        height: auto;
+        padding: 20px 0;
+        overflow-y: auto;
+    }
+
+    .form-box {
+        width: 90%; 
+        height: auto;
+        padding: 20px; 
+        margin: 0 auto; 
+        position: static; 
+        transform: none; 
+    }
+}
+
+/* Small Devices Landscape (min-width: 576px and max-width: 950px) */
+@media (min-width: 576px) and (max-width: 950px) and (orientation: landscape) {
+    .container {
+        height: auto;
+        padding: 20px 0;
+        overflow-y: auto;
+    }
+
+    .form-box {
+        width: 85%;
+        height: auto;
+        padding: 20px; 
+        margin: 0 auto; 
+        position: static; 
+        transform: none; 
+    }
+}
