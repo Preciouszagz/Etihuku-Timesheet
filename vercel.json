@@ -4,7 +4,8 @@
       { "src": "/", "dest": "/index.html" },
       { "src": "/enroll", "dest": "/enroll.html" },
       { "src": "/attendance", "dest": "/attendance.html" },
-      { "src": "/contact", "dest": "/contact.html" },
+      { "src": "/codegen", "dest": "/codegen.html" },
+      { "src": "/timelog", "dest": "/timelog.html" },
       { "src": "/old-page", "status": 301, "headers": { "Location": "/new-page" } }
     ]
   }
