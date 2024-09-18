@@ -273,6 +273,10 @@ form p a:hover{
         flex-direction: column;
         justify-content: center;
     }
+
+    .toast{
+        font-size: 1.2rem;
+    }
 }
 
 /* X-large Devices */
