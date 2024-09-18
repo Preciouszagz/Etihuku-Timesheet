@@ -178,8 +178,21 @@
         justify-content: center;
     }
 
+    .form-box p{
+        margin-bottom: 15px;
+    }
+
     .task-area{
-        margin-top: 0.5rem;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .task-area button{
+        margin: 15px auto;
+    }
+
+    #logOutBtn{
+        margin-bottom: -10px;
     }
 }
 
