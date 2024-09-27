@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             dButton.disabled = false;
             dButton.style.background = '';
             dButton.style.cursor = '';
-        }, 10000);
+        }, 8000);
     }
 
     // Show toast notification
