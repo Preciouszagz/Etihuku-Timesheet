@@ -119,6 +119,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const name = loginData.name;
             const passcode = loginData.passcode;
             const dailyPasscode = document.getElementById('passcode').value;
+            const clock_date = document.getElementById('clock-date').value
+            const clock_time = document.getElementById('clock-time').value
+
+            //Convert to URLEncoded Format
+            const encodedDate = encodeURIComponent(clock_date);
+            const encodedTime = encodeURIComponent(clock_time);
+
+            // Build the request URL dynamically with inputted date and time;
+            const url = `https://etihuku-timesheet.azurewebsites.net/stand-up?clock_date=${encodedDate}&clock_time=${encodedTime}`
 
             error.style.display = 'none';
             disableBtn();
@@ -138,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 redirect: "follow"
             };
 
-            fetch("https://etihuku-timesheet.azurewebsites.net/stand-up?clock_date=2024-09-05&clock_time=13%3A21%3A12", requestOptions)
+            fetch(url, requestOptions)
             .then((response) => response.text())
             .then((result) => {
                 console.log(result);
