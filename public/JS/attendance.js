@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 showToast(result);
             })
             .catch((error) => {
-                showToast('Error submitting time log');
+                showToast(error);
                 console.error(error);
             });
         }
